@@ -41,15 +41,14 @@ targets:
       - name: Run SwiftLint
         path: /bin/sh
         script: |-
-          if [[ "$(uname -m)" == arm64 ]]; then
-            export PATH="/opt/homebrew/bin:$PATH"
-          fi
+            export PATH=/opt/homebrew/bin:$PATH
 
-          if which swiftlint > /dev/null; then
-            swiftlint
-          else
-            echo "warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint"
-          fi
+            if which mint >/dev/null; then
+                xcrun --sdk macosx mint run swiftlint swiftlint --fix
+                xcrun --sdk macosx mint run swiftlint swiftlint
+            else
+                echo "warning: Mint not installed, download from https://github.com/yonaskolb/Mint"
+            fi
   MyTemplateiOSAppTests:
     type: bundle.unit-test
     platform: iOS
