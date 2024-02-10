@@ -59,6 +59,11 @@ targets:
     settings:
       base:
         ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES: YES
+    info:
+      path: MyTemplateiOSAppTests/Info.plist
+      properties:
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        CFBundleShortVersionString: $(MARKETING_VERSION)
   MyTemplateiOSAppUITests:
     type: bundle.ui-testing
     platform: iOS
@@ -69,3 +74,8 @@ targets:
     settings:
       base:
         ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES: YES
+    info:
+      path: MyTemplateiOSAppUITests/Info.plist
+      properties:
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        CFBundleShortVersionString: $(MARKETING_VERSION)
