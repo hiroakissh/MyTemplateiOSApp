@@ -6,6 +6,7 @@ options:
 
 settings:
   base:
+    PRODUCT_BUNDLE_IDENTIFIER: com.hiroakiapp
     DEVELOPMENT_TEAM: SAITO HIROAKI
     MARKETING_VERSION: 1.0.0
     CURRENT_PROJECT_VERSION: 1
@@ -18,7 +19,7 @@ targets:
     sources:
       - path: MyTemplateiOSApp
     options:
-        bundleIdPrefix: com.mothule
+        bundleIdPrefix: com.hiroakiapp
     settings:
       base:
         ENABLE_PREVIEWS: YES
