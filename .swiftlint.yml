@@ -1,0 +1,6 @@
+
+included:
+  - ./MyTemplateiOSApp/
+
+excluded:
+  - ./*/.build/
