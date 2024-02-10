@@ -142,6 +142,7 @@
 				531316662B7723CF0060B7C1 /* Sources */,
 				531316672B7723CF0060B7C1 /* Frameworks */,
 				531316682B7723CF0060B7C1 /* Resources */,
+				53BDE2672B77D0DF0078E363 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -256,6 +257,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		53BDE2672B77D0DF0078E363 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=/opt/homebrew/bin:$PATH \n\nif which mint >/dev/null; then\n    xcrun --sdk macosx mint run swiftlint swiftlint --fix\n    xcrun --sdk macosx mint run swiftlint swiftlint\nelse\n    echo \"warning: Mint not installed, download from https://github.com/yonaskolb/Mint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		531316662B7723CF0060B7C1 /* Sources */ = {
