@@ -1,8 +1,8 @@
 name: MyTemplateiOSApp
 options:
-  xcodeVersion: "15.2"
+  xcodeVersion: 15.1
   deploymentTarget:
-    iOS: "17.0"
+    iOS: 17.0
 
 settings:
   base:
