@@ -6,19 +6,40 @@ on:
   pull_request:
     branches: [ "main" ]
 
+env:
+  DEVELOPER_DIR: /Applications/Xcode_15.1.app
+
 jobs:
   build:
     name: Build and Test default scheme using any available iPhone simulator
     runs-on: macos-latest
-
+    env:
+      MINT_PATH: mint/lib
+      MINT_LINK_PATH: mint/bin
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Set Default Scheme
-        run: sudo xcode-select -s '/Applications/Xcode15.1.app/Contents/Developer'
-      - name: Cofirm XcodeVersion
+      - name: Show Xcode version
         run: xcodebuild -version
-      - name: Bundle Install
-        run: bundle install
+      - name: Cache Gems
+        uses: actions/cache@v2
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+      - name: Install Bundled Gems
+        run: |
+            bundle config path vendor/bundle
+            bundle install --jobs 4 --retry 3
+      - name: Install Mint
+        run: brew install mint
+      - name: Cache Mint packages
+        uses: actions/cache@v2
+        with:
+          path: mint
+          key: ${{ runner.os }}-mint-${{ hashFiles('**/Mintfile') }}
+          restore-keys: |
+            ${{ runner.os }}-mint-
       - name: Bundle FastLane Test
         run: bundle exec fastlane test
