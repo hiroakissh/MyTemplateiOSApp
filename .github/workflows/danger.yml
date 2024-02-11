@@ -5,20 +5,26 @@ on:
     branches:
       - '**'
 
-permissions:
-  contents: read
-  pull-requests: write
-  issues: write
-  statuses: write
-
-jobs:
-  danger:
-    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-
-      - name: Danger
-        uses: 417-72KI/danger-swiftlint@v5.9 # Xcode15系
+      - uses: actions/checkout@master
+      - name: Setup Ruby
+        uses: actions/setup-ruby@v1
+        with:
+            ruby-version: '3.x'
+      - name: cache bundle
+        uses: actions/cache@v2
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+      - name: setup bundle
+        run: |
+          gem install bundler
+          bundle config path vendor/bundle
+          bundle install --jobs 4 --retry 3
+      - name: Run Danger
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # github token
-
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          bundle exec danger
