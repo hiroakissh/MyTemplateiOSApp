@@ -85,6 +85,7 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
+vendor/bundle
 
 # Code Injection
 #
