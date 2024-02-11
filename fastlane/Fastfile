@@ -24,7 +24,7 @@ platform :ios do
   lane :test do |option|
     scan(
       scheme: "MyTemplateiOSApp",
-      devices: ["iPhone 15"],
+      devices: ["iPhone 11"],
       configuration: "Debug",
       clean: true
     )
