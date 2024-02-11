@@ -1,4 +1,5 @@
 import Danger
+import DangerSwiftLint
 import Foundation
 
 let danger = Danger()
@@ -15,6 +16,4 @@ if let linesOfCode = danger.git.linesOfCode,
 }
 
 // PRで修正した範囲だけswiftlintでチェックしてコメントする
-danger.github.dismissOutOfRangeMessages()
-danger.swiftlint.configFile = ".swiftlint.yml"
-danger.swiftlint.lintFiles(inlineMode: true)
+SwiftLint.lint(inline: true, configFile: ".swiftlint.yml")
