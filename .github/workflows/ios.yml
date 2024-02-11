@@ -19,6 +19,7 @@ jobs:
       - run: xcodebuild -version
       - run: bundle install
       - run: bundle exec fastlane test
+
     steps:
       - uses: actions/checkout@v3
       - name: Danger
