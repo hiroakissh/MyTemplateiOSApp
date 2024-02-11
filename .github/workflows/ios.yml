@@ -16,6 +16,9 @@ jobs:
         uses: actions/checkout@v3
       - name: Set Default Scheme
         run: sudo xcode-select -s '/Applications/Xcode15.1.app/Contents/Developer'
+      - name: Cofirm XcodeVersion
         run: xcodebuild -version
+      - name: Bundle Install
         run: bundle install
+      - name: Bundle FastLane Test
         run: bundle exec fastlane test
