@@ -26,8 +26,7 @@ platform :ios do
       scheme: "MyTemplateiOSApp",
       device: "iPhone 15",
       configuration: "Debug",
-      clean: true,
-      skip_build: true
+      clean: true
     )
   end
 
