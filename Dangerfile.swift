@@ -1,5 +1,4 @@
 import Danger
-import DangerSwiftLint
 import Foundation
 
 let danger = Danger()
