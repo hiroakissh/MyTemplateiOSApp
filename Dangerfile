@@ -8,7 +8,3 @@ warn("このPR修正しすぎ :sob: :sob: :sob:") if git.lines_of_code > 500
 github.dismiss_out_of_range_messages
 swiftlint.config_file = '.swiftlint.yml'
 swiftlint.lint_files inline_mode: true
-
-# PRのブランチ名にチケットNoが含まれていればチケットのURLをコメントする
-match = github.branch_for_head.match /redmine(\d+)/
-message "Redmine Ticket: <a href='https://example.com/issues/#{match[1]}'>##{match[1]}</a>" if match
