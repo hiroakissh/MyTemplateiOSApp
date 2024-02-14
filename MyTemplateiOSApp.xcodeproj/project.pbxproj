@@ -16,6 +16,7 @@
 		5313168C2B7723D20060B7C1 /* MyTemplateiOSAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5313168B2B7723D20060B7C1 /* MyTemplateiOSAppUITests.swift */; };
 		5313168E2B7723D20060B7C1 /* MyTemplateiOSAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5313168D2B7723D20060B7C1 /* MyTemplateiOSAppUITestsLaunchTests.swift */; };
 		53BDE26D2B7D78600078E363 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 53BDE26C2B7D78600078E363 /* ComposableArchitecture */; };
+		53BDE26F2B7D79040078E363 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BDE26E2B7D79040078E363 /* LaunchScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		531316872B7723D20060B7C1 /* MyTemplateiOSAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyTemplateiOSAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5313168B2B7723D20060B7C1 /* MyTemplateiOSAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTemplateiOSAppUITests.swift; sourceTree = "<group>"; };
 		5313168D2B7723D20060B7C1 /* MyTemplateiOSAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTemplateiOSAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		53BDE26E2B7D79040078E363 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				5313166D2B7723CF0060B7C1 /* MyTemplateiOSAppApp.swift */,
+				53BDE26E2B7D79040078E363 /* LaunchScreen.swift */,
 				5313166F2B7723CF0060B7C1 /* ContentView.swift */,
 				531316712B7723CF0060B7C1 /* Item.swift */,
 				531316732B7723D10060B7C1 /* Assets.xcassets */,
@@ -291,6 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53BDE26F2B7D79040078E363 /* LaunchScreen.swift in Sources */,
 				531316702B7723CF0060B7C1 /* ContentView.swift in Sources */,
 				531316722B7723CF0060B7C1 /* Item.swift in Sources */,
 				5313166E2B7723CF0060B7C1 /* MyTemplateiOSAppApp.swift in Sources */,
