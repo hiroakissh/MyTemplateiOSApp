@@ -101,9 +101,6 @@
 		5313166C2B7723CF0060B7C1 /* MyTemplateiOSApp */ = {
 			isa = PBXGroup;
 			children = (
-				53BDE2722B7E65410078E363 /* Domain */,
-				53BDE2712B7E65360078E363 /* ViewStore */,
-				53BDE2702B7E652E0078E363 /* View */,
 				5313166D2B7723CF0060B7C1 /* MyTemplateiOSAppApp.swift */,
 				53BDE26E2B7D79040078E363 /* LaunchScreen.swift */,
 				5313166F2B7723CF0060B7C1 /* ContentView.swift */,
@@ -138,59 +135,6 @@
 				5313168D2B7723D20060B7C1 /* MyTemplateiOSAppUITestsLaunchTests.swift */,
 			);
 			path = MyTemplateiOSAppUITests;
-			sourceTree = "<group>";
-		};
-		53BDE2702B7E652E0078E363 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		53BDE2712B7E65360078E363 /* ViewStore */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewStore;
-			sourceTree = "<group>";
-		};
-		53BDE2722B7E65410078E363 /* Domain */ = {
-			isa = PBXGroup;
-			children = (
-				53BDE2762B7E655E0078E363 /* Effect */,
-				53BDE2752B7E65590078E363 /* Action */,
-				53BDE2742B7E65510078E363 /* Reducer */,
-				53BDE2732B7E65480078E363 /* State */,
-			);
-			path = Domain;
-			sourceTree = "<group>";
-		};
-		53BDE2732B7E65480078E363 /* State */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = State;
-			sourceTree = "<group>";
-		};
-		53BDE2742B7E65510078E363 /* Reducer */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Reducer;
-			sourceTree = "<group>";
-		};
-		53BDE2752B7E65590078E363 /* Action */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Action;
-			sourceTree = "<group>";
-		};
-		53BDE2762B7E655E0078E363 /* Effect */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Effect;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
