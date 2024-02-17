@@ -17,6 +17,7 @@
 		5313168E2B7723D20060B7C1 /* MyTemplateiOSAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5313168D2B7723D20060B7C1 /* MyTemplateiOSAppUITestsLaunchTests.swift */; };
 		53BDE26D2B7D78600078E363 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 53BDE26C2B7D78600078E363 /* ComposableArchitecture */; };
 		53BDE26F2B7D79040078E363 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BDE26E2B7D79040078E363 /* LaunchScreen.swift */; };
+		53EA745B2B8066CB006CFD02 /* AppFeature in Frameworks */ = {isa = PBXBuildFile; productRef = 53EA745A2B8066CB006CFD02 /* AppFeature */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		5313168B2B7723D20060B7C1 /* MyTemplateiOSAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTemplateiOSAppUITests.swift; sourceTree = "<group>"; };
 		5313168D2B7723D20060B7C1 /* MyTemplateiOSAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTemplateiOSAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		53BDE26E2B7D79040078E363 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
+		53BDE2B12B8062590078E363 /* SampleToDoApp */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SampleToDoApp; path = ../App/SampleToDoApp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				53BDE26D2B7D78600078E363 /* ComposableArchitecture in Frameworks */,
+				53EA745B2B8066CB006CFD02 /* AppFeature in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,10 +84,12 @@
 		531316612B7723CF0060B7C1 = {
 			isa = PBXGroup;
 			children = (
+				53BDE2B12B8062590078E363 /* SampleToDoApp */,
 				5313166C2B7723CF0060B7C1 /* MyTemplateiOSApp */,
 				531316802B7723D20060B7C1 /* MyTemplateiOSAppTests */,
 				5313168A2B7723D20060B7C1 /* MyTemplateiOSAppUITests */,
 				5313166B2B7723CF0060B7C1 /* Products */,
+				53EA74592B8066CB006CFD02 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,6 +142,13 @@
 			path = MyTemplateiOSAppUITests;
 			sourceTree = "<group>";
 		};
+		53EA74592B8066CB006CFD02 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -156,6 +168,7 @@
 			name = MyTemplateiOSApp;
 			packageProductDependencies = (
 				53BDE26C2B7D78600078E363 /* ComposableArchitecture */,
+				53EA745A2B8066CB006CFD02 /* AppFeature */,
 			);
 			productName = MyTemplateiOSApp;
 			productReference = 5313166A2B7723CF0060B7C1 /* MyTemplateiOSApp.app */;
@@ -673,6 +686,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 53BDE26B2B7D78600078E363 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
 			productName = ComposableArchitecture;
+		};
+		53EA745A2B8066CB006CFD02 /* AppFeature */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppFeature;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
