@@ -17,7 +17,11 @@
 		5313168E2B7723D20060B7C1 /* MyTemplateiOSAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5313168D2B7723D20060B7C1 /* MyTemplateiOSAppUITestsLaunchTests.swift */; };
 		53BDE26D2B7D78600078E363 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 53BDE26C2B7D78600078E363 /* ComposableArchitecture */; };
 		53BDE26F2B7D79040078E363 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BDE26E2B7D79040078E363 /* LaunchScreen.swift */; };
-		53EA745B2B8066CB006CFD02 /* AppFeature in Frameworks */ = {isa = PBXBuildFile; productRef = 53EA745A2B8066CB006CFD02 /* AppFeature */; };
+		53EA74642B821FA2006CFD02 /* SampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EA74632B821FA2006CFD02 /* SampleView.swift */; };
+		53EA74672B821FC6006CFD02 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EA74662B821FC6006CFD02 /* PrimaryButton.swift */; };
+		53EA746A2B82200C006CFD02 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EA74692B82200C006CFD02 /* SampleData.swift */; };
+		53EA746D2B8220A3006CFD02 /* SampleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EA746C2B8220A3006CFD02 /* SampleRepository.swift */; };
+		53EA74722B8221A3006CFD02 /* SampleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EA74712B8221A3006CFD02 /* SampleAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +55,11 @@
 		5313168B2B7723D20060B7C1 /* MyTemplateiOSAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTemplateiOSAppUITests.swift; sourceTree = "<group>"; };
 		5313168D2B7723D20060B7C1 /* MyTemplateiOSAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTemplateiOSAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		53BDE26E2B7D79040078E363 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
-		53EA745C2B806A8C006CFD02 /* SampleToDoApp */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SampleToDoApp; path = App/SampleToDoApp; sourceTree = "<group>"; };
+		53EA74632B821FA2006CFD02 /* SampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleView.swift; sourceTree = "<group>"; };
+		53EA74662B821FC6006CFD02 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		53EA74692B82200C006CFD02 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		53EA746C2B8220A3006CFD02 /* SampleRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleRepository.swift; sourceTree = "<group>"; };
+		53EA74712B8221A3006CFD02 /* SampleAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +68,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				53BDE26D2B7D78600078E363 /* ComposableArchitecture in Frameworks */,
-				53EA745B2B8066CB006CFD02 /* AppFeature in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,7 +91,11 @@
 		531316612B7723CF0060B7C1 = {
 			isa = PBXGroup;
 			children = (
-				53EA745C2B806A8C006CFD02 /* SampleToDoApp */,
+				53EA74622B821F71006CFD02 /* Utility */,
+				53EA74612B821F68006CFD02 /* Domain */,
+				53EA74602B821F5E006CFD02 /* DataStore */,
+				53EA745F2B821F51006CFD02 /* UIComponent */,
+				53EA745E2B821F40006CFD02 /* Presentation */,
 				5313166C2B7723CF0060B7C1 /* MyTemplateiOSApp */,
 				531316802B7723D20060B7C1 /* MyTemplateiOSAppTests */,
 				5313168A2B7723D20060B7C1 /* MyTemplateiOSAppUITests */,
@@ -149,6 +160,94 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		53EA745E2B821F40006CFD02 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				53EA746E2B822143006CFD02 /* View */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		53EA745F2B821F51006CFD02 /* UIComponent */ = {
+			isa = PBXGroup;
+			children = (
+				53EA74652B821FAF006CFD02 /* Button */,
+			);
+			path = UIComponent;
+			sourceTree = "<group>";
+		};
+		53EA74602B821F5E006CFD02 /* DataStore */ = {
+			isa = PBXGroup;
+			children = (
+				53EA74702B822192006CFD02 /* API */,
+				53EA746B2B822081006CFD02 /* Repository */,
+			);
+			path = DataStore;
+			sourceTree = "<group>";
+		};
+		53EA74612B821F68006CFD02 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				53EA74682B821FF0006CFD02 /* Data */,
+				53EA746F2B82216B006CFD02 /* Usecase */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		53EA74622B821F71006CFD02 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		53EA74652B821FAF006CFD02 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				53EA74662B821FC6006CFD02 /* PrimaryButton.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		53EA74682B821FF0006CFD02 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				53EA74692B82200C006CFD02 /* SampleData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		53EA746B2B822081006CFD02 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				53EA746C2B8220A3006CFD02 /* SampleRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		53EA746E2B822143006CFD02 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				53EA74632B821FA2006CFD02 /* SampleView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		53EA746F2B82216B006CFD02 /* Usecase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Usecase;
+			sourceTree = "<group>";
+		};
+		53EA74702B822192006CFD02 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				53EA74712B8221A3006CFD02 /* SampleAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -168,7 +267,6 @@
 			name = MyTemplateiOSApp;
 			packageProductDependencies = (
 				53BDE26C2B7D78600078E363 /* ComposableArchitecture */,
-				53EA745A2B8066CB006CFD02 /* AppFeature */,
 			);
 			productName = MyTemplateiOSApp;
 			productReference = 5313166A2B7723CF0060B7C1 /* MyTemplateiOSApp.app */;
@@ -307,9 +405,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53EA74672B821FC6006CFD02 /* PrimaryButton.swift in Sources */,
+				53EA746A2B82200C006CFD02 /* SampleData.swift in Sources */,
+				53EA74642B821FA2006CFD02 /* SampleView.swift in Sources */,
+				53EA746D2B8220A3006CFD02 /* SampleRepository.swift in Sources */,
 				53BDE26F2B7D79040078E363 /* LaunchScreen.swift in Sources */,
 				531316702B7723CF0060B7C1 /* ContentView.swift in Sources */,
 				531316722B7723CF0060B7C1 /* Item.swift in Sources */,
+				53EA74722B8221A3006CFD02 /* SampleAPI.swift in Sources */,
 				5313166E2B7723CF0060B7C1 /* MyTemplateiOSAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -686,10 +789,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 53BDE26B2B7D78600078E363 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
 			productName = ComposableArchitecture;
-		};
-		53EA745A2B8066CB006CFD02 /* AppFeature */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = AppFeature;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
