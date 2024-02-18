@@ -19,20 +19,24 @@
 		53BDE26F2B7D79040078E363 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BDE26E2B7D79040078E363 /* LaunchScreen.swift */; };
 		53EA74642B821FA2006CFD02 /* SampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EA74632B821FA2006CFD02 /* SampleView.swift */; };
 		53EA74672B821FC6006CFD02 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EA74662B821FC6006CFD02 /* PrimaryButton.swift */; };
-		53EA746A2B82200C006CFD02 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EA74692B82200C006CFD02 /* SampleData.swift */; };
-		53EA746D2B8220A3006CFD02 /* SampleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EA746C2B8220A3006CFD02 /* SampleRepository.swift */; };
-		53EA74722B8221A3006CFD02 /* SampleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EA74712B8221A3006CFD02 /* SampleAPI.swift */; };
+		53EA746A2B82200C006CFD02 /* SampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EA74692B82200C006CFD02 /* SampleModel.swift */; };
+		53EA746D2B8220A3006CFD02 /* SampleRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EA746C2B8220A3006CFD02 /* SampleRepositoryProtocol.swift */; };
+		53EA74722B8221A3006CFD02 /* SampleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EA74712B8221A3006CFD02 /* SampleRepository.swift */; };
+		53EA74752B8225AB006CFD02 /* SampleUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EA74742B8225AB006CFD02 /* SampleUseCase.swift */; };
+		53EA74782B822738006CFD02 /* SampleErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EA74772B822738006CFD02 /* SampleErrorType.swift */; };
+		53EA747B2B8228D6006CFD02 /* SampleExtension+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EA747A2B8228D6006CFD02 /* SampleExtension+.swift */; };
+		53EA747D2B822A7B006CFD02 /* SampleFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EA747C2B822A7B006CFD02 /* SampleFeature.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5313167E2B7723D20060B7C1 /* PBXContainerItemProxy */ = {
+		53C3D51B2B822C620088ADD5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 531316622B7723CF0060B7C1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 531316692B7723CF0060B7C1;
 			remoteInfo = MyTemplateiOSApp;
 		};
-		531316882B7723D20060B7C1 /* PBXContainerItemProxy */ = {
+		53C3D51D2B822C660088ADD5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 531316622B7723CF0060B7C1 /* Project object */;
 			proxyType = 1;
@@ -42,24 +46,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5313166A2B7723CF0060B7C1 /* MyTemplateiOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTemplateiOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5313166D2B7723CF0060B7C1 /* MyTemplateiOSAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTemplateiOSAppApp.swift; sourceTree = "<group>"; };
 		5313166F2B7723CF0060B7C1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		531316712B7723CF0060B7C1 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		531316732B7723D10060B7C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		531316752B7723D10060B7C1 /* MyTemplateiOSApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyTemplateiOSApp.entitlements; sourceTree = "<group>"; };
 		531316772B7723D10060B7C1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		5313167D2B7723D20060B7C1 /* MyTemplateiOSAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyTemplateiOSAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		531316812B7723D20060B7C1 /* MyTemplateiOSAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTemplateiOSAppTests.swift; sourceTree = "<group>"; };
-		531316872B7723D20060B7C1 /* MyTemplateiOSAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyTemplateiOSAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5313168B2B7723D20060B7C1 /* MyTemplateiOSAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTemplateiOSAppUITests.swift; sourceTree = "<group>"; };
 		5313168D2B7723D20060B7C1 /* MyTemplateiOSAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTemplateiOSAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		53BDE26E2B7D79040078E363 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
+		53C3D5182B822C400088ADD5 /* MyTemplateiOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = MyTemplateiOSApp.app; path = /Users/hiroaki/Desktop/Desktop/myProjcts/MyTemplateiOSApp/build/Debug/MyTemplateiOSApp.app; sourceTree = "<absolute>"; };
+		53C3D5192B822C400088ADD5 /* MyTemplateiOSAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MyTemplateiOSAppTests.xctest; path = /Users/hiroaki/Desktop/Desktop/myProjcts/MyTemplateiOSApp/build/Debug/MyTemplateiOSAppTests.xctest; sourceTree = "<absolute>"; };
+		53C3D51A2B822C400088ADD5 /* MyTemplateiOSAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MyTemplateiOSAppUITests.xctest; path = /Users/hiroaki/Desktop/Desktop/myProjcts/MyTemplateiOSApp/build/Debug/MyTemplateiOSAppUITests.xctest; sourceTree = "<absolute>"; };
 		53EA74632B821FA2006CFD02 /* SampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleView.swift; sourceTree = "<group>"; };
 		53EA74662B821FC6006CFD02 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
-		53EA74692B82200C006CFD02 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
-		53EA746C2B8220A3006CFD02 /* SampleRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleRepository.swift; sourceTree = "<group>"; };
-		53EA74712B8221A3006CFD02 /* SampleAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAPI.swift; sourceTree = "<group>"; };
+		53EA74692B82200C006CFD02 /* SampleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleModel.swift; sourceTree = "<group>"; };
+		53EA746C2B8220A3006CFD02 /* SampleRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleRepositoryProtocol.swift; sourceTree = "<group>"; };
+		53EA74712B8221A3006CFD02 /* SampleRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleRepository.swift; sourceTree = "<group>"; };
+		53EA74742B8225AB006CFD02 /* SampleUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleUseCase.swift; sourceTree = "<group>"; };
+		53EA74772B822738006CFD02 /* SampleErrorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleErrorType.swift; sourceTree = "<group>"; };
+		53EA747A2B8228D6006CFD02 /* SampleExtension+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SampleExtension+.swift"; sourceTree = "<group>"; };
+		53EA747C2B822A7B006CFD02 /* SampleFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleFeature.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,32 +101,19 @@
 			children = (
 				53EA74622B821F71006CFD02 /* Utility */,
 				53EA74612B821F68006CFD02 /* Domain */,
-				53EA74602B821F5E006CFD02 /* DataStore */,
+				53EA74602B821F5E006CFD02 /* Data */,
 				53EA745F2B821F51006CFD02 /* UIComponent */,
 				53EA745E2B821F40006CFD02 /* Presentation */,
 				5313166C2B7723CF0060B7C1 /* MyTemplateiOSApp */,
 				531316802B7723D20060B7C1 /* MyTemplateiOSAppTests */,
 				5313168A2B7723D20060B7C1 /* MyTemplateiOSAppUITests */,
-				5313166B2B7723CF0060B7C1 /* Products */,
-				53EA74592B8066CB006CFD02 /* Frameworks */,
 			);
-			sourceTree = "<group>";
-		};
-		5313166B2B7723CF0060B7C1 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5313166A2B7723CF0060B7C1 /* MyTemplateiOSApp.app */,
-				5313167D2B7723D20060B7C1 /* MyTemplateiOSAppTests.xctest */,
-				531316872B7723D20060B7C1 /* MyTemplateiOSAppUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		5313166C2B7723CF0060B7C1 /* MyTemplateiOSApp */ = {
 			isa = PBXGroup;
 			children = (
 				5313166D2B7723CF0060B7C1 /* MyTemplateiOSAppApp.swift */,
-				53BDE26E2B7D79040078E363 /* LaunchScreen.swift */,
 				5313166F2B7723CF0060B7C1 /* ContentView.swift */,
 				531316712B7723CF0060B7C1 /* Item.swift */,
 				531316732B7723D10060B7C1 /* Assets.xcassets */,
@@ -153,16 +148,10 @@
 			path = MyTemplateiOSAppUITests;
 			sourceTree = "<group>";
 		};
-		53EA74592B8066CB006CFD02 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		53EA745E2B821F40006CFD02 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				53EA74732B82244A006CFD02 /* Feature */,
 				53EA746E2B822143006CFD02 /* View */,
 			);
 			path = Presentation;
@@ -176,20 +165,21 @@
 			path = UIComponent;
 			sourceTree = "<group>";
 		};
-		53EA74602B821F5E006CFD02 /* DataStore */ = {
+		53EA74602B821F5E006CFD02 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				53EA74702B822192006CFD02 /* API */,
-				53EA746B2B822081006CFD02 /* Repository */,
+				53EA746B2B822081006CFD02 /* RepositoryProtocol */,
 			);
-			path = DataStore;
+			path = Data;
 			sourceTree = "<group>";
 		};
 		53EA74612B821F68006CFD02 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				53EA74682B821FF0006CFD02 /* Data */,
-				53EA746F2B82216B006CFD02 /* Usecase */,
+				53EA74792B8227AC006CFD02 /* Repository */,
+				53EA74762B822721006CFD02 /* Error */,
+				53EA74682B821FF0006CFD02 /* Model */,
+				53EA746F2B82216B006CFD02 /* UseCase */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -197,6 +187,7 @@
 		53EA74622B821F71006CFD02 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				53EA747A2B8228D6006CFD02 /* SampleExtension+.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -209,43 +200,61 @@
 			path = Button;
 			sourceTree = "<group>";
 		};
-		53EA74682B821FF0006CFD02 /* Data */ = {
+		53EA74682B821FF0006CFD02 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				53EA74692B82200C006CFD02 /* SampleData.swift */,
+				53EA74692B82200C006CFD02 /* SampleModel.swift */,
 			);
-			path = Data;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		53EA746B2B822081006CFD02 /* Repository */ = {
+		53EA746B2B822081006CFD02 /* RepositoryProtocol */ = {
 			isa = PBXGroup;
 			children = (
-				53EA746C2B8220A3006CFD02 /* SampleRepository.swift */,
+				53EA746C2B8220A3006CFD02 /* SampleRepositoryProtocol.swift */,
 			);
-			path = Repository;
+			path = RepositoryProtocol;
 			sourceTree = "<group>";
 		};
 		53EA746E2B822143006CFD02 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				53EA74632B821FA2006CFD02 /* SampleView.swift */,
+				53BDE26E2B7D79040078E363 /* LaunchScreen.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		53EA746F2B82216B006CFD02 /* Usecase */ = {
+		53EA746F2B82216B006CFD02 /* UseCase */ = {
 			isa = PBXGroup;
 			children = (
+				53EA74742B8225AB006CFD02 /* SampleUseCase.swift */,
 			);
-			path = Usecase;
+			path = UseCase;
 			sourceTree = "<group>";
 		};
-		53EA74702B822192006CFD02 /* API */ = {
+		53EA74732B82244A006CFD02 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
-				53EA74712B8221A3006CFD02 /* SampleAPI.swift */,
+				53EA747C2B822A7B006CFD02 /* SampleFeature.swift */,
 			);
-			path = API;
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		53EA74762B822721006CFD02 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				53EA74772B822738006CFD02 /* SampleErrorType.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		53EA74792B8227AC006CFD02 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				53EA74712B8221A3006CFD02 /* SampleRepository.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,7 +278,7 @@
 				53BDE26C2B7D78600078E363 /* ComposableArchitecture */,
 			);
 			productName = MyTemplateiOSApp;
-			productReference = 5313166A2B7723CF0060B7C1 /* MyTemplateiOSApp.app */;
+			productReference = 53C3D5182B822C400088ADD5 /* MyTemplateiOSApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 		5313167C2B7723D20060B7C1 /* MyTemplateiOSAppTests */ = {
@@ -283,11 +292,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				5313167F2B7723D20060B7C1 /* PBXTargetDependency */,
+				53C3D51C2B822C620088ADD5 /* PBXTargetDependency */,
 			);
 			name = MyTemplateiOSAppTests;
 			productName = MyTemplateiOSAppTests;
-			productReference = 5313167D2B7723D20060B7C1 /* MyTemplateiOSAppTests.xctest */;
+			productReference = 53C3D5192B822C400088ADD5 /* MyTemplateiOSAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		531316862B7723D20060B7C1 /* MyTemplateiOSAppUITests */ = {
@@ -301,11 +310,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				531316892B7723D20060B7C1 /* PBXTargetDependency */,
+				53C3D51E2B822C660088ADD5 /* PBXTargetDependency */,
 			);
 			name = MyTemplateiOSAppUITests;
 			productName = MyTemplateiOSAppUITests;
-			productReference = 531316872B7723D20060B7C1 /* MyTemplateiOSAppUITests.xctest */;
+			productReference = 53C3D51A2B822C400088ADD5 /* MyTemplateiOSAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -343,7 +352,7 @@
 			packageReferences = (
 				53BDE26B2B7D78600078E363 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 			);
-			productRefGroup = 5313166B2B7723CF0060B7C1 /* Products */;
+			productRefGroup = 531316612B7723CF0060B7C1;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -406,14 +415,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				53EA74672B821FC6006CFD02 /* PrimaryButton.swift in Sources */,
-				53EA746A2B82200C006CFD02 /* SampleData.swift in Sources */,
+				53EA746A2B82200C006CFD02 /* SampleModel.swift in Sources */,
 				53EA74642B821FA2006CFD02 /* SampleView.swift in Sources */,
-				53EA746D2B8220A3006CFD02 /* SampleRepository.swift in Sources */,
+				53EA746D2B8220A3006CFD02 /* SampleRepositoryProtocol.swift in Sources */,
 				53BDE26F2B7D79040078E363 /* LaunchScreen.swift in Sources */,
 				531316702B7723CF0060B7C1 /* ContentView.swift in Sources */,
 				531316722B7723CF0060B7C1 /* Item.swift in Sources */,
-				53EA74722B8221A3006CFD02 /* SampleAPI.swift in Sources */,
+				53EA74782B822738006CFD02 /* SampleErrorType.swift in Sources */,
+				53EA747D2B822A7B006CFD02 /* SampleFeature.swift in Sources */,
+				53EA74752B8225AB006CFD02 /* SampleUseCase.swift in Sources */,
+				53EA74722B8221A3006CFD02 /* SampleRepository.swift in Sources */,
 				5313166E2B7723CF0060B7C1 /* MyTemplateiOSAppApp.swift in Sources */,
+				53EA747B2B8228D6006CFD02 /* SampleExtension+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,15 +450,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5313167F2B7723D20060B7C1 /* PBXTargetDependency */ = {
+		53C3D51C2B822C620088ADD5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 531316692B7723CF0060B7C1 /* MyTemplateiOSApp */;
-			targetProxy = 5313167E2B7723D20060B7C1 /* PBXContainerItemProxy */;
+			targetProxy = 53C3D51B2B822C620088ADD5 /* PBXContainerItemProxy */;
 		};
-		531316892B7723D20060B7C1 /* PBXTargetDependency */ = {
+		53C3D51E2B822C660088ADD5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 531316692B7723CF0060B7C1 /* MyTemplateiOSApp */;
-			targetProxy = 531316882B7723D20060B7C1 /* PBXContainerItemProxy */;
+			targetProxy = 53C3D51D2B822C660088ADD5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
