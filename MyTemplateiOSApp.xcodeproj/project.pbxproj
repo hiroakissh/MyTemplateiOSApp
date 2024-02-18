@@ -15,10 +15,10 @@
 		531316822B7723D20060B7C1 /* MyTemplateiOSAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531316812B7723D20060B7C1 /* MyTemplateiOSAppTests.swift */; };
 		5313168C2B7723D20060B7C1 /* MyTemplateiOSAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5313168B2B7723D20060B7C1 /* MyTemplateiOSAppUITests.swift */; };
 		5313168E2B7723D20060B7C1 /* MyTemplateiOSAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5313168D2B7723D20060B7C1 /* MyTemplateiOSAppUITestsLaunchTests.swift */; };
+		539411A82B8234A3008E126A /* UIComponent in Frameworks */ = {isa = PBXBuildFile; productRef = 539411A72B8234A3008E126A /* UIComponent */; };
 		53BDE26D2B7D78600078E363 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 53BDE26C2B7D78600078E363 /* ComposableArchitecture */; };
 		53BDE26F2B7D79040078E363 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BDE26E2B7D79040078E363 /* LaunchScreen.swift */; };
 		53EA74642B821FA2006CFD02 /* SampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EA74632B821FA2006CFD02 /* SampleView.swift */; };
-		53EA74672B821FC6006CFD02 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EA74662B821FC6006CFD02 /* PrimaryButton.swift */; };
 		53EA746A2B82200C006CFD02 /* SampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EA74692B82200C006CFD02 /* SampleModel.swift */; };
 		53EA746D2B8220A3006CFD02 /* SampleRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EA746C2B8220A3006CFD02 /* SampleRepositoryProtocol.swift */; };
 		53EA74722B8221A3006CFD02 /* SampleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EA74712B8221A3006CFD02 /* SampleRepository.swift */; };
@@ -55,12 +55,12 @@
 		531316812B7723D20060B7C1 /* MyTemplateiOSAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTemplateiOSAppTests.swift; sourceTree = "<group>"; };
 		5313168B2B7723D20060B7C1 /* MyTemplateiOSAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTemplateiOSAppUITests.swift; sourceTree = "<group>"; };
 		5313168D2B7723D20060B7C1 /* MyTemplateiOSAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTemplateiOSAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		539411A22B823407008E126A /* MyTemplateiOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTemplateiOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		539411A32B823407008E126A /* MyTemplateiOSAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyTemplateiOSAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		539411A42B823407008E126A /* MyTemplateiOSAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyTemplateiOSAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		539411A52B823444008E126A /* UIComponent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = UIComponent; sourceTree = "<group>"; };
 		53BDE26E2B7D79040078E363 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
-		53C3D5182B822C400088ADD5 /* MyTemplateiOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = MyTemplateiOSApp.app; path = /Users/hiroaki/Desktop/Desktop/myProjcts/MyTemplateiOSApp/build/Debug/MyTemplateiOSApp.app; sourceTree = "<absolute>"; };
-		53C3D5192B822C400088ADD5 /* MyTemplateiOSAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MyTemplateiOSAppTests.xctest; path = /Users/hiroaki/Desktop/Desktop/myProjcts/MyTemplateiOSApp/build/Debug/MyTemplateiOSAppTests.xctest; sourceTree = "<absolute>"; };
-		53C3D51A2B822C400088ADD5 /* MyTemplateiOSAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MyTemplateiOSAppUITests.xctest; path = /Users/hiroaki/Desktop/Desktop/myProjcts/MyTemplateiOSApp/build/Debug/MyTemplateiOSAppUITests.xctest; sourceTree = "<absolute>"; };
 		53EA74632B821FA2006CFD02 /* SampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleView.swift; sourceTree = "<group>"; };
-		53EA74662B821FC6006CFD02 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		53EA74692B82200C006CFD02 /* SampleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleModel.swift; sourceTree = "<group>"; };
 		53EA746C2B8220A3006CFD02 /* SampleRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleRepositoryProtocol.swift; sourceTree = "<group>"; };
 		53EA74712B8221A3006CFD02 /* SampleRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleRepository.swift; sourceTree = "<group>"; };
@@ -75,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				539411A82B8234A3008E126A /* UIComponent in Frameworks */,
 				53BDE26D2B7D78600078E363 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -99,14 +100,18 @@
 		531316612B7723CF0060B7C1 = {
 			isa = PBXGroup;
 			children = (
+				539411A52B823444008E126A /* UIComponent */,
 				53EA74622B821F71006CFD02 /* Utility */,
 				53EA74612B821F68006CFD02 /* Domain */,
 				53EA74602B821F5E006CFD02 /* Data */,
-				53EA745F2B821F51006CFD02 /* UIComponent */,
 				53EA745E2B821F40006CFD02 /* Presentation */,
 				5313166C2B7723CF0060B7C1 /* MyTemplateiOSApp */,
 				531316802B7723D20060B7C1 /* MyTemplateiOSAppTests */,
 				5313168A2B7723D20060B7C1 /* MyTemplateiOSAppUITests */,
+				539411A22B823407008E126A /* MyTemplateiOSApp.app */,
+				539411A32B823407008E126A /* MyTemplateiOSAppTests.xctest */,
+				539411A42B823407008E126A /* MyTemplateiOSAppUITests.xctest */,
+				539411A62B8234A3008E126A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,6 +153,13 @@
 			path = MyTemplateiOSAppUITests;
 			sourceTree = "<group>";
 		};
+		539411A62B8234A3008E126A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		53EA745E2B821F40006CFD02 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,14 +167,6 @@
 				53EA746E2B822143006CFD02 /* View */,
 			);
 			path = Presentation;
-			sourceTree = "<group>";
-		};
-		53EA745F2B821F51006CFD02 /* UIComponent */ = {
-			isa = PBXGroup;
-			children = (
-				53EA74652B821FAF006CFD02 /* Button */,
-			);
-			path = UIComponent;
 			sourceTree = "<group>";
 		};
 		53EA74602B821F5E006CFD02 /* Data */ = {
@@ -190,14 +194,6 @@
 				53EA747A2B8228D6006CFD02 /* SampleExtension+.swift */,
 			);
 			path = Utility;
-			sourceTree = "<group>";
-		};
-		53EA74652B821FAF006CFD02 /* Button */ = {
-			isa = PBXGroup;
-			children = (
-				53EA74662B821FC6006CFD02 /* PrimaryButton.swift */,
-			);
-			path = Button;
 			sourceTree = "<group>";
 		};
 		53EA74682B821FF0006CFD02 /* Model */ = {
@@ -276,9 +272,10 @@
 			name = MyTemplateiOSApp;
 			packageProductDependencies = (
 				53BDE26C2B7D78600078E363 /* ComposableArchitecture */,
+				539411A72B8234A3008E126A /* UIComponent */,
 			);
 			productName = MyTemplateiOSApp;
-			productReference = 53C3D5182B822C400088ADD5 /* MyTemplateiOSApp.app */;
+			productReference = 539411A22B823407008E126A /* MyTemplateiOSApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 		5313167C2B7723D20060B7C1 /* MyTemplateiOSAppTests */ = {
@@ -296,7 +293,7 @@
 			);
 			name = MyTemplateiOSAppTests;
 			productName = MyTemplateiOSAppTests;
-			productReference = 53C3D5192B822C400088ADD5 /* MyTemplateiOSAppTests.xctest */;
+			productReference = 539411A32B823407008E126A /* MyTemplateiOSAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		531316862B7723D20060B7C1 /* MyTemplateiOSAppUITests */ = {
@@ -314,7 +311,7 @@
 			);
 			name = MyTemplateiOSAppUITests;
 			productName = MyTemplateiOSAppUITests;
-			productReference = 53C3D51A2B822C400088ADD5 /* MyTemplateiOSAppUITests.xctest */;
+			productReference = 539411A42B823407008E126A /* MyTemplateiOSAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -414,7 +411,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53EA74672B821FC6006CFD02 /* PrimaryButton.swift in Sources */,
 				53EA746A2B82200C006CFD02 /* SampleModel.swift in Sources */,
 				53EA74642B821FA2006CFD02 /* SampleView.swift in Sources */,
 				53EA746D2B8220A3006CFD02 /* SampleRepositoryProtocol.swift in Sources */,
@@ -798,6 +794,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		539411A72B8234A3008E126A /* UIComponent */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = UIComponent;
+		};
 		53BDE26C2B7D78600078E363 /* ComposableArchitecture */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 53BDE26B2B7D78600078E363 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
