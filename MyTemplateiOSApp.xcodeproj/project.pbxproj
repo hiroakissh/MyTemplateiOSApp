@@ -15,6 +15,8 @@
 		531316822B7723D20060B7C1 /* MyTemplateiOSAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531316812B7723D20060B7C1 /* MyTemplateiOSAppTests.swift */; };
 		5313168C2B7723D20060B7C1 /* MyTemplateiOSAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5313168B2B7723D20060B7C1 /* MyTemplateiOSAppUITests.swift */; };
 		5313168E2B7723D20060B7C1 /* MyTemplateiOSAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5313168D2B7723D20060B7C1 /* MyTemplateiOSAppUITestsLaunchTests.swift */; };
+		533E9CB22B839B5400D7041C /* Data in Frameworks */ = {isa = PBXBuildFile; productRef = 533E9CB12B839B5400D7041C /* Data */; };
+		533E9CB42B839B5800D7041C /* Domain in Frameworks */ = {isa = PBXBuildFile; productRef = 533E9CB32B839B5800D7041C /* Domain */; };
 		539411A82B8234A3008E126A /* UIComponent in Frameworks */ = {isa = PBXBuildFile; productRef = 539411A72B8234A3008E126A /* UIComponent */; };
 		53BDE26D2B7D78600078E363 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 53BDE26C2B7D78600078E363 /* ComposableArchitecture */; };
 		53BDE26F2B7D79040078E363 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BDE26E2B7D79040078E363 /* LaunchScreen.swift */; };
@@ -68,6 +70,8 @@
 			files = (
 				539411A82B8234A3008E126A /* UIComponent in Frameworks */,
 				53BDE26D2B7D78600078E363 /* ComposableArchitecture in Frameworks */,
+				533E9CB42B839B5800D7041C /* Domain in Frameworks */,
+				533E9CB22B839B5400D7041C /* Data in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +201,8 @@
 			packageProductDependencies = (
 				53BDE26C2B7D78600078E363 /* ComposableArchitecture */,
 				539411A72B8234A3008E126A /* UIComponent */,
+				533E9CB12B839B5400D7041C /* Data */,
+				533E9CB32B839B5800D7041C /* Domain */,
 			);
 			productName = MyTemplateiOSApp;
 			productReference = 539411A22B823407008E126A /* MyTemplateiOSApp.app */;
@@ -712,6 +718,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		533E9CB12B839B5400D7041C /* Data */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Data;
+		};
+		533E9CB32B839B5800D7041C /* Domain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Domain;
+		};
 		539411A72B8234A3008E126A /* UIComponent */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = UIComponent;
