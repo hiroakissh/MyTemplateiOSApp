@@ -54,8 +54,8 @@
 		533E9CAC2B8235F600D7041C /* Domain */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Domain; sourceTree = "<group>"; };
 		533E9CAD2B82370600D7041C /* Utility */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Utility; sourceTree = "<group>"; };
 		539411A22B823407008E126A /* MyTemplateiOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTemplateiOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		539411A32B823407008E126A /* MyTemplateiOSAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyTemplateiOSAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		539411A42B823407008E126A /* MyTemplateiOSAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyTemplateiOSAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		539411A32B823407008E126A /* MyTemplateiOSAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MyTemplateiOSAppTests.xctest; path = /Users/hiroaki/Desktop/Desktop/myProjcts/MyTemplateiOSApp/build/Debug/MyTemplateiOSAppTests.xctest; sourceTree = "<absolute>"; };
+		539411A42B823407008E126A /* MyTemplateiOSAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MyTemplateiOSAppUITests.xctest; path = /Users/hiroaki/Desktop/Desktop/myProjcts/MyTemplateiOSApp/build/Debug/MyTemplateiOSAppUITests.xctest; sourceTree = "<absolute>"; };
 		539411A52B823444008E126A /* UIComponent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = UIComponent; sourceTree = "<group>"; };
 		539411AC2B82355B008E126A /* Data */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Data; sourceTree = "<group>"; };
 		53BDE26E2B7D79040078E363 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
@@ -104,8 +104,6 @@
 				531316802B7723D20060B7C1 /* MyTemplateiOSAppTests */,
 				5313168A2B7723D20060B7C1 /* MyTemplateiOSAppUITests */,
 				539411A22B823407008E126A /* MyTemplateiOSApp.app */,
-				539411A32B823407008E126A /* MyTemplateiOSAppTests.xctest */,
-				539411A42B823407008E126A /* MyTemplateiOSAppUITests.xctest */,
 				539411A62B8234A3008E126A /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -148,6 +146,27 @@
 			path = MyTemplateiOSAppUITests;
 			sourceTree = "<group>";
 		};
+		533E9CB62B8B7EAD00D7041C /* State */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		533E9CB72B8B7EB200D7041C /* Action */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		533E9CB82B8B7EBD00D7041C /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
 		539411A62B8234A3008E126A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +177,9 @@
 		53EA745E2B821F40006CFD02 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				533E9CB82B8B7EBD00D7041C /* Reducer */,
+				533E9CB72B8B7EB200D7041C /* Action */,
+				533E9CB62B8B7EAD00D7041C /* State */,
 				53EA74732B82244A006CFD02 /* Feature */,
 				53EA746E2B822143006CFD02 /* View */,
 			);
