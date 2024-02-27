@@ -18,6 +18,7 @@
 		533E9CB22B839B5400D7041C /* Data in Frameworks */ = {isa = PBXBuildFile; productRef = 533E9CB12B839B5400D7041C /* Data */; };
 		533E9CB42B839B5800D7041C /* Domain in Frameworks */ = {isa = PBXBuildFile; productRef = 533E9CB32B839B5800D7041C /* Domain */; };
 		533E9CBA2B8B7F6600D7041C /* TodoAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533E9CB92B8B7F6600D7041C /* TodoAction.swift */; };
+		533E9CBC2B8E278E00D7041C /* TodoState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533E9CBB2B8E278E00D7041C /* TodoState.swift */; };
 		539411A82B8234A3008E126A /* UIComponent in Frameworks */ = {isa = PBXBuildFile; productRef = 539411A72B8234A3008E126A /* UIComponent */; };
 		53BDE26D2B7D78600078E363 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 53BDE26C2B7D78600078E363 /* ComposableArchitecture */; };
 		53BDE26F2B7D79040078E363 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BDE26E2B7D79040078E363 /* LaunchScreen.swift */; };
@@ -55,6 +56,7 @@
 		533E9CAC2B8235F600D7041C /* Domain */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Domain; sourceTree = "<group>"; };
 		533E9CAD2B82370600D7041C /* Utility */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Utility; sourceTree = "<group>"; };
 		533E9CB92B8B7F6600D7041C /* TodoAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoAction.swift; sourceTree = "<group>"; };
+		533E9CBB2B8E278E00D7041C /* TodoState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoState.swift; sourceTree = "<group>"; };
 		539411A22B823407008E126A /* MyTemplateiOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTemplateiOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		539411A32B823407008E126A /* MyTemplateiOSAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MyTemplateiOSAppTests.xctest; path = /Users/hiroaki/Desktop/Desktop/myProjcts/MyTemplateiOSApp/build/Debug/MyTemplateiOSAppTests.xctest; sourceTree = "<absolute>"; };
 		539411A42B823407008E126A /* MyTemplateiOSAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MyTemplateiOSAppUITests.xctest; path = /Users/hiroaki/Desktop/Desktop/myProjcts/MyTemplateiOSApp/build/Debug/MyTemplateiOSAppUITests.xctest; sourceTree = "<absolute>"; };
@@ -151,6 +153,7 @@
 		533E9CB62B8B7EAD00D7041C /* State */ = {
 			isa = PBXGroup;
 			children = (
+				533E9CBB2B8E278E00D7041C /* TodoState.swift */,
 			);
 			path = State;
 			sourceTree = "<group>";
@@ -367,6 +370,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				53EA74642B821FA2006CFD02 /* SampleView.swift in Sources */,
+				533E9CBC2B8E278E00D7041C /* TodoState.swift in Sources */,
 				53BDE26F2B7D79040078E363 /* LaunchScreen.swift in Sources */,
 				533E9CBA2B8B7F6600D7041C /* TodoAction.swift in Sources */,
 				531316702B7723CF0060B7C1 /* ContentView.swift in Sources */,
