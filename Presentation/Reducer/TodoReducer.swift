@@ -9,18 +9,16 @@ import Foundation
 import ComposableArchitecture
 
 class TodoReduce: Reducer {
-    typealias State = TodoState
-
-    typealias Action = TodoAction
-
-    var body: some ReducerOf<TodoReduce> {
-        Reduce { state, action in
-            switch action {
-            case .addTodo:
-            case .deleteTodo:
-            case .readTodo:
-            case .updateTodo:
-            }
+    func reduce(into state: inout TodoState, action: TodoAction) -> ComposableArchitecture.Effect<TodoAction> {
+        switch action {
+        case .addTodo:
+            return .none // Stateの変更
+        case .deleteTodo:
+            return .none // Stateの変更
+        case .readTodo:
+            return .none // Stateの変更
+        case .updateTodo:
+            return .none // Stateの変更
         }
     }
 }
