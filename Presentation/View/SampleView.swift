@@ -6,10 +6,17 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 struct SampleView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationLink {
+            WithViewStore(self.state) { state in
+                print(state)
+            } content: { viewStore in
+                print(viewStore)
+            }
+        }
     }
 }
 
