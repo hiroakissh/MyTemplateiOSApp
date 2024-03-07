@@ -8,5 +8,7 @@
 import Foundation
 
 struct TodoState: Equatable {
-
+    var todos:[String] = []
+    var isLoad = false
 }
+
