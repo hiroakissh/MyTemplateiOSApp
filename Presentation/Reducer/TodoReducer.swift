@@ -12,13 +12,21 @@ class TodoReduce: Reducer {
     func reduce(into state: inout TodoState, action: TodoAction) -> ComposableArchitecture.Effect<TodoAction> {
         switch action {
         case .addTodo:
-            return .none // Stateの変更
+            return .run { send in
+                await send(.addTodo)
+            }
         case .deleteTodo:
-            return .none // Stateの変更
+            return .run { send in
+                await send(.deleteTodo)
+            }
         case .readTodo:
-            return .none // Stateの変更
+            return .run { send in
+                await send(.readTodo)
+            }
         case .updateTodo:
-            return .none // Stateの変更
+            return .run { send in
+                await send(.updateTodo)
+            }
         }
     }
 }
