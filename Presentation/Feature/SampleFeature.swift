@@ -9,5 +9,12 @@ import Foundation
 import ComposableArchitecture
 
 class SampleFeature: Reducer {
-    var sample: String = ""
+
+    var body: some ReducerOf<Self> {
+        Reduce { state, action in
+            switch action {
+                
+            }
+        }
+    }
 }
