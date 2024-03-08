@@ -6,7 +6,8 @@
 //
 
 import Foundation
+import ComposableArchitecture
 
-class SampleFeature {
+class SampleFeature: Reducer {
     var sample: String = ""
 }
