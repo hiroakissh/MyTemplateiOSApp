@@ -12,9 +12,7 @@
 		531316722B7723CF0060B7C1 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531316712B7723CF0060B7C1 /* Item.swift */; };
 		531316742B7723D10060B7C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 531316732B7723D10060B7C1 /* Assets.xcassets */; };
 		531316782B7723D10060B7C1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 531316772B7723D10060B7C1 /* Preview Assets.xcassets */; };
-		531316822B7723D20060B7C1 /* MyTemplateiOSAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531316812B7723D20060B7C1 /* MyTemplateiOSAppTests.swift */; };
-		5313168C2B7723D20060B7C1 /* MyTemplateiOSAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5313168B2B7723D20060B7C1 /* MyTemplateiOSAppUITests.swift */; };
-		5313168E2B7723D20060B7C1 /* MyTemplateiOSAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5313168D2B7723D20060B7C1 /* MyTemplateiOSAppUITestsLaunchTests.swift */; };
+		531A83DC2B9C518900624F1B /* MyTemplateiOSAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531A83DB2B9C518900624F1B /* MyTemplateiOSAppTests.swift */; };
 		533E9CB22B839B5400D7041C /* Data in Frameworks */ = {isa = PBXBuildFile; productRef = 533E9CB12B839B5400D7041C /* Data */; };
 		533E9CB42B839B5800D7041C /* Domain in Frameworks */ = {isa = PBXBuildFile; productRef = 533E9CB32B839B5800D7041C /* Domain */; };
 		533E9CBA2B8B7F6600D7041C /* TodoAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533E9CB92B8B7F6600D7041C /* TodoAction.swift */; };
@@ -30,14 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		53C3D51B2B822C620088ADD5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 531316622B7723CF0060B7C1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 531316692B7723CF0060B7C1;
-			remoteInfo = MyTemplateiOSApp;
-		};
-		53C3D51D2B822C660088ADD5 /* PBXContainerItemProxy */ = {
+		531A83DD2B9C518900624F1B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 531316622B7723CF0060B7C1 /* Project object */;
 			proxyType = 1;
@@ -53,9 +44,8 @@
 		531316732B7723D10060B7C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		531316752B7723D10060B7C1 /* MyTemplateiOSApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyTemplateiOSApp.entitlements; sourceTree = "<group>"; };
 		531316772B7723D10060B7C1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		531316812B7723D20060B7C1 /* MyTemplateiOSAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTemplateiOSAppTests.swift; sourceTree = "<group>"; };
-		5313168B2B7723D20060B7C1 /* MyTemplateiOSAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTemplateiOSAppUITests.swift; sourceTree = "<group>"; };
-		5313168D2B7723D20060B7C1 /* MyTemplateiOSAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTemplateiOSAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		531A83D92B9C518900624F1B /* MyTemplateiOSAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyTemplateiOSAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		531A83DB2B9C518900624F1B /* MyTemplateiOSAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTemplateiOSAppTests.swift; sourceTree = "<group>"; };
 		533E9CAC2B8235F600D7041C /* Domain */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Domain; sourceTree = "<group>"; };
 		533E9CAD2B82370600D7041C /* Utility */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Utility; sourceTree = "<group>"; };
 		533E9CB92B8B7F6600D7041C /* TodoAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoAction.swift; sourceTree = "<group>"; };
@@ -64,8 +54,6 @@
 		533E9CBF2B9C20D300D7041C /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 		533E9CC12B9C23E000D7041C /* Todos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todos.swift; sourceTree = "<group>"; };
 		539411A22B823407008E126A /* MyTemplateiOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTemplateiOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		539411A32B823407008E126A /* MyTemplateiOSAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MyTemplateiOSAppTests.xctest; path = /Users/hiroaki/Desktop/Desktop/myProjcts/MyTemplateiOSApp/build/Debug/MyTemplateiOSAppTests.xctest; sourceTree = "<absolute>"; };
-		539411A42B823407008E126A /* MyTemplateiOSAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MyTemplateiOSAppUITests.xctest; path = /Users/hiroaki/Desktop/Desktop/myProjcts/MyTemplateiOSApp/build/Debug/MyTemplateiOSAppUITests.xctest; sourceTree = "<absolute>"; };
 		539411A52B823444008E126A /* UIComponent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = UIComponent; sourceTree = "<group>"; };
 		539411AC2B82355B008E126A /* Data */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Data; sourceTree = "<group>"; };
 		53BDE26E2B7D79040078E363 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
@@ -85,14 +73,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5313167A2B7723D20060B7C1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		531316842B7723D20060B7C1 /* Frameworks */ = {
+		531A83D62B9C518900624F1B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -111,10 +92,10 @@
 				539411A52B823444008E126A /* UIComponent */,
 				53EA745E2B821F40006CFD02 /* Presentation */,
 				5313166C2B7723CF0060B7C1 /* MyTemplateiOSApp */,
-				531316802B7723D20060B7C1 /* MyTemplateiOSAppTests */,
-				5313168A2B7723D20060B7C1 /* MyTemplateiOSAppUITests */,
 				539411A22B823407008E126A /* MyTemplateiOSApp.app */,
+				531A83DA2B9C518900624F1B /* MyTemplateiOSAppTests */,
 				539411A62B8234A3008E126A /* Frameworks */,
+				531A83D92B9C518900624F1B /* MyTemplateiOSAppTests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,21 +120,12 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		531316802B7723D20060B7C1 /* MyTemplateiOSAppTests */ = {
+		531A83DA2B9C518900624F1B /* MyTemplateiOSAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				531316812B7723D20060B7C1 /* MyTemplateiOSAppTests.swift */,
+				531A83DB2B9C518900624F1B /* MyTemplateiOSAppTests.swift */,
 			);
 			path = MyTemplateiOSAppTests;
-			sourceTree = "<group>";
-		};
-		5313168A2B7723D20060B7C1 /* MyTemplateiOSAppUITests */ = {
-			isa = PBXGroup;
-			children = (
-				5313168B2B7723D20060B7C1 /* MyTemplateiOSAppUITests.swift */,
-				5313168D2B7723D20060B7C1 /* MyTemplateiOSAppUITestsLaunchTests.swift */,
-			);
-			path = MyTemplateiOSAppUITests;
 			sourceTree = "<group>";
 		};
 		533E9CB62B8B7EAD00D7041C /* State */ = {
@@ -245,41 +217,23 @@
 			productReference = 539411A22B823407008E126A /* MyTemplateiOSApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5313167C2B7723D20060B7C1 /* MyTemplateiOSAppTests */ = {
+		531A83D82B9C518900624F1B /* MyTemplateiOSAppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 531316942B7723D20060B7C1 /* Build configuration list for PBXNativeTarget "MyTemplateiOSAppTests" */;
+			buildConfigurationList = 531A83DF2B9C518900624F1B /* Build configuration list for PBXNativeTarget "MyTemplateiOSAppTests" */;
 			buildPhases = (
-				531316792B7723D20060B7C1 /* Sources */,
-				5313167A2B7723D20060B7C1 /* Frameworks */,
-				5313167B2B7723D20060B7C1 /* Resources */,
+				531A83D52B9C518900624F1B /* Sources */,
+				531A83D62B9C518900624F1B /* Frameworks */,
+				531A83D72B9C518900624F1B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				53C3D51C2B822C620088ADD5 /* PBXTargetDependency */,
+				531A83DE2B9C518900624F1B /* PBXTargetDependency */,
 			);
 			name = MyTemplateiOSAppTests;
 			productName = MyTemplateiOSAppTests;
-			productReference = 539411A32B823407008E126A /* MyTemplateiOSAppTests.xctest */;
+			productReference = 531A83D92B9C518900624F1B /* MyTemplateiOSAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		531316862B7723D20060B7C1 /* MyTemplateiOSAppUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 531316972B7723D20060B7C1 /* Build configuration list for PBXNativeTarget "MyTemplateiOSAppUITests" */;
-			buildPhases = (
-				531316832B7723D20060B7C1 /* Sources */,
-				531316842B7723D20060B7C1 /* Frameworks */,
-				531316852B7723D20060B7C1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				53C3D51E2B822C660088ADD5 /* PBXTargetDependency */,
-			);
-			name = MyTemplateiOSAppUITests;
-			productName = MyTemplateiOSAppUITests;
-			productReference = 539411A42B823407008E126A /* MyTemplateiOSAppUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -294,11 +248,7 @@
 					531316692B7723CF0060B7C1 = {
 						CreatedOnToolsVersion = 15.1;
 					};
-					5313167C2B7723D20060B7C1 = {
-						CreatedOnToolsVersion = 15.1;
-						TestTargetID = 531316692B7723CF0060B7C1;
-					};
-					531316862B7723D20060B7C1 = {
+					531A83D82B9C518900624F1B = {
 						CreatedOnToolsVersion = 15.1;
 						TestTargetID = 531316692B7723CF0060B7C1;
 					};
@@ -321,8 +271,7 @@
 			projectRoot = "";
 			targets = (
 				531316692B7723CF0060B7C1 /* MyTemplateiOSApp */,
-				5313167C2B7723D20060B7C1 /* MyTemplateiOSAppTests */,
-				531316862B7723D20060B7C1 /* MyTemplateiOSAppUITests */,
+				531A83D82B9C518900624F1B /* MyTemplateiOSAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -337,14 +286,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5313167B2B7723D20060B7C1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		531316852B7723D20060B7C1 /* Resources */ = {
+		531A83D72B9C518900624F1B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -392,35 +334,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		531316792B7723D20060B7C1 /* Sources */ = {
+		531A83D52B9C518900624F1B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				531316822B7723D20060B7C1 /* MyTemplateiOSAppTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		531316832B7723D20060B7C1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5313168E2B7723D20060B7C1 /* MyTemplateiOSAppUITestsLaunchTests.swift in Sources */,
-				5313168C2B7723D20060B7C1 /* MyTemplateiOSAppUITests.swift in Sources */,
+				531A83DC2B9C518900624F1B /* MyTemplateiOSAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		53C3D51C2B822C620088ADD5 /* PBXTargetDependency */ = {
+		531A83DE2B9C518900624F1B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 531316692B7723CF0060B7C1 /* MyTemplateiOSApp */;
-			targetProxy = 53C3D51B2B822C620088ADD5 /* PBXContainerItemProxy */;
-		};
-		53C3D51E2B822C660088ADD5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 531316692B7723CF0060B7C1 /* MyTemplateiOSApp */;
-			targetProxy = 53C3D51D2B822C660088ADD5 /* PBXContainerItemProxy */;
+			targetProxy = 531A83DD2B9C518900624F1B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -617,10 +545,9 @@
 			};
 			name = Release;
 		};
-		531316952B7723D20060B7C1 /* Debug */ = {
+		531A83E02B9C518900624F1B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -640,10 +567,9 @@
 			};
 			name = Debug;
 		};
-		531316962B7723D20060B7C1 /* Release */ = {
+		531A83E12B9C518900624F1B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -660,50 +586,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyTemplateiOSApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MyTemplateiOSApp";
-			};
-			name = Release;
-		};
-		531316982B7723D20060B7C1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = X5LBWH4CYQ;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
-				MACOSX_DEPLOYMENT_TARGET = 14.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hiroakiapp.MyTemplateiOSAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = MyTemplateiOSApp;
-			};
-			name = Debug;
-		};
-		531316992B7723D20060B7C1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = X5LBWH4CYQ;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
-				MACOSX_DEPLOYMENT_TARGET = 14.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hiroakiapp.MyTemplateiOSAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = MyTemplateiOSApp;
 			};
 			name = Release;
 		};
@@ -728,20 +610,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		531316942B7723D20060B7C1 /* Build configuration list for PBXNativeTarget "MyTemplateiOSAppTests" */ = {
+		531A83DF2B9C518900624F1B /* Build configuration list for PBXNativeTarget "MyTemplateiOSAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				531316952B7723D20060B7C1 /* Debug */,
-				531316962B7723D20060B7C1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		531316972B7723D20060B7C1 /* Build configuration list for PBXNativeTarget "MyTemplateiOSAppUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				531316982B7723D20060B7C1 /* Debug */,
-				531316992B7723D20060B7C1 /* Release */,
+				531A83E02B9C518900624F1B /* Debug */,
+				531A83E12B9C518900624F1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
