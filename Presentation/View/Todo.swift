@@ -40,12 +40,6 @@ struct TodoView: View {
 
             TextField("Untitled Todo", text: $store.description)
         }
-        .foregroundStyle(store.isComplete ? .gray : .clear)
+        .foregroundStyle(store.isComplete ? .gray : .blue)
     }
-}
-
-#Preview {
-    TodoView(store: Store(initialState:  Todo.State(), reducer: {
-        Todos()
-    }))
 }
