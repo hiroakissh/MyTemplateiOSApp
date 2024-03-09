@@ -8,7 +8,7 @@
 import Foundation
 import ComposableArchitecture
 
-class TodoReduce: Reducer {
+class TodoReducer: Reducer {
     func reduce(into state: inout TodoState, action: TodoAction) -> ComposableArchitecture.Effect<TodoAction> {
         switch action {
         case .addTodo:
