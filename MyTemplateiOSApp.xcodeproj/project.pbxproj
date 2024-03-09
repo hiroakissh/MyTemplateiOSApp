@@ -17,6 +17,11 @@
 		5313168E2B7723D20060B7C1 /* MyTemplateiOSAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5313168D2B7723D20060B7C1 /* MyTemplateiOSAppUITestsLaunchTests.swift */; };
 		533E9CB22B839B5400D7041C /* Data in Frameworks */ = {isa = PBXBuildFile; productRef = 533E9CB12B839B5400D7041C /* Data */; };
 		533E9CB42B839B5800D7041C /* Domain in Frameworks */ = {isa = PBXBuildFile; productRef = 533E9CB32B839B5800D7041C /* Domain */; };
+		533E9CBA2B8B7F6600D7041C /* TodoAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533E9CB92B8B7F6600D7041C /* TodoAction.swift */; };
+		533E9CBC2B8E278E00D7041C /* TodoState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533E9CBB2B8E278E00D7041C /* TodoState.swift */; };
+		533E9CBE2B90C21400D7041C /* TodoReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533E9CBD2B90C21400D7041C /* TodoReducer.swift */; };
+		533E9CC02B9C20D300D7041C /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533E9CBF2B9C20D300D7041C /* Todo.swift */; };
+		533E9CC22B9C23E000D7041C /* Todos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533E9CC12B9C23E000D7041C /* Todos.swift */; };
 		539411A82B8234A3008E126A /* UIComponent in Frameworks */ = {isa = PBXBuildFile; productRef = 539411A72B8234A3008E126A /* UIComponent */; };
 		53BDE26D2B7D78600078E363 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 53BDE26C2B7D78600078E363 /* ComposableArchitecture */; };
 		53BDE26F2B7D79040078E363 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BDE26E2B7D79040078E363 /* LaunchScreen.swift */; };
@@ -53,9 +58,14 @@
 		5313168D2B7723D20060B7C1 /* MyTemplateiOSAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTemplateiOSAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		533E9CAC2B8235F600D7041C /* Domain */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Domain; sourceTree = "<group>"; };
 		533E9CAD2B82370600D7041C /* Utility */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Utility; sourceTree = "<group>"; };
+		533E9CB92B8B7F6600D7041C /* TodoAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoAction.swift; sourceTree = "<group>"; };
+		533E9CBB2B8E278E00D7041C /* TodoState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoState.swift; sourceTree = "<group>"; };
+		533E9CBD2B90C21400D7041C /* TodoReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoReducer.swift; sourceTree = "<group>"; };
+		533E9CBF2B9C20D300D7041C /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		533E9CC12B9C23E000D7041C /* Todos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todos.swift; sourceTree = "<group>"; };
 		539411A22B823407008E126A /* MyTemplateiOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTemplateiOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		539411A32B823407008E126A /* MyTemplateiOSAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyTemplateiOSAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		539411A42B823407008E126A /* MyTemplateiOSAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyTemplateiOSAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		539411A32B823407008E126A /* MyTemplateiOSAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MyTemplateiOSAppTests.xctest; path = /Users/hiroaki/Desktop/Desktop/myProjcts/MyTemplateiOSApp/build/Debug/MyTemplateiOSAppTests.xctest; sourceTree = "<absolute>"; };
+		539411A42B823407008E126A /* MyTemplateiOSAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MyTemplateiOSAppUITests.xctest; path = /Users/hiroaki/Desktop/Desktop/myProjcts/MyTemplateiOSApp/build/Debug/MyTemplateiOSAppUITests.xctest; sourceTree = "<absolute>"; };
 		539411A52B823444008E126A /* UIComponent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = UIComponent; sourceTree = "<group>"; };
 		539411AC2B82355B008E126A /* Data */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Data; sourceTree = "<group>"; };
 		53BDE26E2B7D79040078E363 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
@@ -104,8 +114,6 @@
 				531316802B7723D20060B7C1 /* MyTemplateiOSAppTests */,
 				5313168A2B7723D20060B7C1 /* MyTemplateiOSAppUITests */,
 				539411A22B823407008E126A /* MyTemplateiOSApp.app */,
-				539411A32B823407008E126A /* MyTemplateiOSAppTests.xctest */,
-				539411A42B823407008E126A /* MyTemplateiOSAppUITests.xctest */,
 				539411A62B8234A3008E126A /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -148,6 +156,30 @@
 			path = MyTemplateiOSAppUITests;
 			sourceTree = "<group>";
 		};
+		533E9CB62B8B7EAD00D7041C /* State */ = {
+			isa = PBXGroup;
+			children = (
+				533E9CBB2B8E278E00D7041C /* TodoState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		533E9CB72B8B7EB200D7041C /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				533E9CB92B8B7F6600D7041C /* TodoAction.swift */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		533E9CB82B8B7EBD00D7041C /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				533E9CBD2B90C21400D7041C /* TodoReducer.swift */,
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
 		539411A62B8234A3008E126A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +190,9 @@
 		53EA745E2B821F40006CFD02 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				533E9CB82B8B7EBD00D7041C /* Reducer */,
+				533E9CB72B8B7EB200D7041C /* Action */,
+				533E9CB62B8B7EAD00D7041C /* State */,
 				53EA74732B82244A006CFD02 /* Feature */,
 				53EA746E2B822143006CFD02 /* View */,
 			);
@@ -169,6 +204,8 @@
 			children = (
 				53EA74632B821FA2006CFD02 /* SampleView.swift */,
 				53BDE26E2B7D79040078E363 /* LaunchScreen.swift */,
+				533E9CBF2B9C20D300D7041C /* Todo.swift */,
+				533E9CC12B9C23E000D7041C /* Todos.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -342,11 +379,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				53EA74642B821FA2006CFD02 /* SampleView.swift in Sources */,
+				533E9CBC2B8E278E00D7041C /* TodoState.swift in Sources */,
+				533E9CBE2B90C21400D7041C /* TodoReducer.swift in Sources */,
 				53BDE26F2B7D79040078E363 /* LaunchScreen.swift in Sources */,
+				533E9CBA2B8B7F6600D7041C /* TodoAction.swift in Sources */,
+				533E9CC22B9C23E000D7041C /* Todos.swift in Sources */,
 				531316702B7723CF0060B7C1 /* ContentView.swift in Sources */,
 				531316722B7723CF0060B7C1 /* Item.swift in Sources */,
 				53EA747D2B822A7B006CFD02 /* SampleFeature.swift in Sources */,
 				5313166E2B7723CF0060B7C1 /* MyTemplateiOSAppApp.swift in Sources */,
+				533E9CC02B9C20D300D7041C /* Todo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
