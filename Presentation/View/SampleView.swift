@@ -1,18 +1,24 @@
+////
+////  SampleView.swift
+////  MyTemplateiOSApp
+////
+////  Created by HiroakiSaito on 2024/02/18.
+////
 //
-//  SampleView.swift
-//  MyTemplateiOSApp
+//import SwiftUI
+//import ComposableArchitecture
 //
-//  Created by HiroakiSaito on 2024/02/18.
+//struct SampleView: View {
+//    
+//    let store: Store<TodoReducer, TodoAction>
 //
-
-import SwiftUI
-
-struct SampleView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-#Preview {
-    SampleView()
-}
+//    var body: some View {
+//        WithViewStore(self.store, observe: { $0 }) { viewStore in
+//            <#code#>
+//        }
+//    }
+//}
+//
+//#Preview {
+//    SampleView()
+//}

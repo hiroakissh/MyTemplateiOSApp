@@ -5,6 +5,7 @@
 //  Created by HiroakiSaito on 2024/02/15.
 //
 
+import ComposableArchitecture
 import SwiftUI
 
 struct LaunchScreen: View {
@@ -28,7 +29,10 @@ struct LaunchScreen: View {
                 }
             }
         } else {
-            ContentView()
+            AppView(store: Store(initialState: Todos.State()) {
+                Todos()
+              }
+            )
         }
     }
 }
