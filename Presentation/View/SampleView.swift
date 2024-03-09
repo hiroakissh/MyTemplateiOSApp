@@ -9,13 +9,12 @@ import SwiftUI
 import ComposableArchitecture
 
 struct SampleView: View {
+    
+    let store: Store<TodoReducer, TodoAction>
+
     var body: some View {
-        NavigationLink {
-            WithViewStore(self.state) { state in
-                print(state)
-            } content: { viewStore in
-                print(viewStore)
-            }
+        WithViewStore(self.store, observe: { $0 }) { viewStore in
+            <#code#>
         }
     }
 }
