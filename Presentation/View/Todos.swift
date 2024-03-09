@@ -18,10 +18,6 @@ enum Filter: LocalizedStringKey, CaseIterable, Hashable {
 struct Todos {
     @ObservableState
     struct State: Equatable {
-        static func == (lhs: Todos.State, rhs: Todos.State) -> Bool {
-            return true
-        }
-
         var editMode: EditMode = .inactive
         var filter: Filter = .all
         var todos: IdentifiedArrayOf<Todo.State> = []
