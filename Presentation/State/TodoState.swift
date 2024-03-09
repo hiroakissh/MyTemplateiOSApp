@@ -1,20 +1,20 @@
+////
+////  TodoState.swift
+////  MyTemplateiOSApp
+////
+////  Created by HiroakiSaito on 2024/02/27.
+////
 //
-//  TodoState.swift
-//  MyTemplateiOSApp
+//import Foundation
 //
-//  Created by HiroakiSaito on 2024/02/27.
+//struct TodoState: Equatable {
+//    var todos:[String] = []
+//    var isLoad = false
+//    var error: DBError
+//}
 //
-
-import Foundation
-
-struct TodoState: Equatable {
-    var todos:[String] = []
-    var isLoad = false
-    var error: DBError
-}
-
-enum DBError: Error {
-    case addError
-    case removeError
-    case updateError
-}
+//enum DBError: Error {
+//    case addError
+//    case removeError
+//    case updateError
+//}

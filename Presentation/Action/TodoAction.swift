@@ -1,16 +1,16 @@
+////
+////  TodoAction.swift
+////  MyTemplateiOSApp
+////
+////  Created by HiroakiSaito on 2024/02/25.
+////
 //
-//  TodoAction.swift
-//  MyTemplateiOSApp
+//import Foundation
+//import ComposableArchitecture
 //
-//  Created by HiroakiSaito on 2024/02/25.
-//
-
-import Foundation
-import ComposableArchitecture
-
-enum TodoAction {
-    case addTodo
-    case updateTodo
-    case readTodo
-    case deleteTodo
-}
+//enum TodoAction {
+//    case addTodo
+//    case updateTodo
+//    case readTodo
+//    case deleteTodo
+//}
