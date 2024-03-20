@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "0A4F1638-422F-403D-B20A-69692E4AC997",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:MyTemplateiOSApp.xcodeproj",
+        "identifier" : "53481AFC2BAB35B8005D8E97",
+        "name" : "MyTemplateiOSAppTests"
+      }
+    }
+  ],
+  "version" : 1
+}
