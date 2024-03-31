@@ -23,7 +23,7 @@ platform :ios do
 
   lane :test do |option|
     scan(
-      scheme: "MyTemplateiOSApp",
+      scheme: "MyTemplateiOSApp-Stub",
       device: "iPhone 15",
       configuration: "Debug",
       clean: true,
