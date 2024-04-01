@@ -6,7 +6,7 @@
 //
 
 import ComposableArchitecture
-@preconcurrency import SwiftUI
+import SwiftUI
 
 enum Filter: LocalizedStringKey, CaseIterable, Hashable {
     case all = "All"

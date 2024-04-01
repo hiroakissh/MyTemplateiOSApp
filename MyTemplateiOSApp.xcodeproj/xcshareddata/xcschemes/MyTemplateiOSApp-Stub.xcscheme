@@ -43,7 +43,7 @@
             parallelizable = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "531A83D82B9C518900624F1B"
+               BlueprintIdentifier = "53481AFC2BAB35B8005D8E97"
                BuildableName = "MyTemplateiOSAppTests.xctest"
                BlueprintName = "MyTemplateiOSAppTests"
                ReferencedContainer = "container:MyTemplateiOSApp.xcodeproj">
@@ -52,7 +52,7 @@
       </Testables>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "Stub"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
