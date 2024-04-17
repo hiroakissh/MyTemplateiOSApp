@@ -20,6 +20,7 @@
 		539411A82B8234A3008E126A /* UIComponent in Frameworks */ = {isa = PBXBuildFile; productRef = 539411A72B8234A3008E126A /* UIComponent */; };
 		53BDE26D2B7D78600078E363 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 53BDE26C2B7D78600078E363 /* ComposableArchitecture */; };
 		53BDE26F2B7D79040078E363 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BDE26E2B7D79040078E363 /* LaunchScreen.swift */; };
+		53D0DA602BD00ED400DF1F21 /* MockApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D0DA5F2BD00ED400DF1F21 /* MockApi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		539411A52B823444008E126A /* UIComponent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = UIComponent; sourceTree = "<group>"; };
 		539411AC2B82355B008E126A /* Data */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Data; sourceTree = "<group>"; };
 		53BDE26E2B7D79040078E363 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
+		53D0DA5F2BD00ED400DF1F21 /* MockApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockApi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 			children = (
 				533E9CBF2B9C20D300D7041C /* Todo.swift */,
 				533E9CC12B9C23E000D7041C /* Todos.swift */,
+				53D0DA5F2BD00ED400DF1F21 /* MockApi.swift */,
 			);
 			path = Feature;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 			files = (
 				53BDE26F2B7D79040078E363 /* LaunchScreen.swift in Sources */,
 				533E9CC22B9C23E000D7041C /* Todos.swift in Sources */,
+				53D0DA602BD00ED400DF1F21 /* MockApi.swift in Sources */,
 				531316702B7723CF0060B7C1 /* ContentView.swift in Sources */,
 				531316722B7723CF0060B7C1 /* Item.swift in Sources */,
 				5313166E2B7723CF0060B7C1 /* MyTemplateiOSAppApp.swift in Sources */,
