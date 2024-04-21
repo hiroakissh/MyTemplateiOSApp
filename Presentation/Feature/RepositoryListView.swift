@@ -86,6 +86,8 @@ public struct RepositoryListView: View {
     }
 
     public var body: some View {
+        // 変化をコンソールの表示できる
+        let _ = Self._printChanges()
         Group {
             // Storeを使用することでsomeStateという形で取得
             if store.isLoading {
@@ -133,4 +135,14 @@ public struct RepositoryListView: View {
             store.send(.onAppear)
         }
     }
+}
+
+#Preview {
+    RepositoryListView(
+        store: .init(
+            initialState: RepositoryList.State()
+        ) {
+                RepositoryList()
+            }
+    )
 }
