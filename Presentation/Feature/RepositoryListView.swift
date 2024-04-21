@@ -8,9 +8,10 @@
 import ComposableArchitecture
 import Domain
 import Foundation
+import SwiftUI
 
 @Reducer
-public struct RepositoryListView {
+public struct RepositoryList {
     @ObservableState
     // テストでStateの変化をassertionで切るようにするために、StateをEquatableにする
     public struct State: Equatable {
@@ -30,7 +31,7 @@ public struct RepositoryListView {
             switch action {
             case .onAppear:
                 state.isLoading = true
-//                return .none // 外部に対して実行したい処理がないため、Effect.noneを返却する
+                //                return .none // 外部に対して実行したい処理がないため、Effect.noneを返却する
                 return .run { send in // Effect.runはSendという型の@ MainActorが付与された型を提供している
                     await send(
                         .searchRepositoriesResponse(
@@ -74,4 +75,62 @@ public struct RepositoryListView {
         decoder.keyDecodingStrategy = .convertFromSnakeCase
         return decoder
     }()
+}
+
+public struct RepositoryListView: View {
+    let store: StoreOf<RepositoryList>
+
+    // Store<XXX.State, XXX.Action>と同等
+    public init(store: StoreOf<RepositoryList>) {
+        self.store = store
+    }
+
+    public var body: some View {
+        Group {
+            // Storeを使用することでsomeStateという形で取得
+            if store.isLoading {
+                ProgressView()
+            } else {
+                List {
+                    ForEach(store.repositories, id: \.id) { repository in
+                        Button {
+
+                        } label: {
+                            VStack(alignment: .leading, spacing: 8) {
+                                Text(repository.fullName)
+                                    .font(.title2.bold())
+                                Text(repository.description ?? "")
+                                    .font(.body)
+                                    .lineLimit(2)
+                                HStack(alignment: .center, spacing: 32) {
+                                    Label(title: {
+                                        Text("\(repository.stargazersCount)")
+                                            .font(.callout)
+                                    },
+                                    icon: {
+                                        Image(systemName: "star.fill")
+                                            .foregroundStyle(.yellow)
+                                        }
+                                    )
+                                    Label {
+                                        Text(repository.language ?? "")
+                                            .font(.callout)
+                                    } icon: {
+                                        Image(systemName: "text.word.spacing")
+                                            .foregroundStyle(.gray)
+                                    }
+                                }
+                            }
+                        }
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                    }
+                    .buttonStyle(.plain)
+                }
+            }
+        }
+        .onAppear {
+            // Storeを使用することでstore.send(.someAction)という形でActionを送れる
+            store.send(.onAppear)
+        }
+    }
 }
