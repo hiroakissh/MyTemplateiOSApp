@@ -31,13 +31,14 @@ public struct RepositoryListView {
             case .onAppear:
                 state.isLoading = true
 //                return .none // 外部に対して実行したい処理がないため、Effect.noneを返却する
-                return .run { send in
+                return .run { send in // Effect.runはSendという型の@ MainActorが付与された型を提供している
                     await send(
                         .searchRepositoriesResponse(
                             Result {
                                 let query = "composable"
                                 let url = URL(string: "https://api.github.com/search/repositories?q=\(query)&sort=stars")!
                                 var request = URLRequest(url: url)
+                                // Bundle.main.infoDictionary経由で、Tokenを取得してHttp Headerに利用することでAPI制限を回避
                                 if let token = Bundle.main.infoDictionary?["GithubPersonalAccessToken"] as? String {
                                     request.setValue(
                                         "Bearer \(token)",
