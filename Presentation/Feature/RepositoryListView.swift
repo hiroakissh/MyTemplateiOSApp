@@ -55,6 +55,17 @@ public struct RepositoryListView {
                         )
                     )
                 }
+            case .searchRepositoriesResponse(let result):
+                state.isLoading = false
+
+                switch result {
+                case let .success(response):
+                    state.repositories = response
+                    return .none
+                case let .failure(error):
+                    // TODO: Handling Error
+                    return .none
+                }
             }
         }
     }
