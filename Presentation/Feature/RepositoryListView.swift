@@ -46,7 +46,7 @@ public struct RepositoryListView {
                                     )
                                 }
                                 let (data, _) = try await URLSession.shared.data(for: request)
-                                let repositories = try JSONDecoder().decode(
+                                let repositories = try jsonDecoder.decode(
                                     GithubSearchResult.self,
                                     from: data
                                 ).items
@@ -69,5 +69,9 @@ public struct RepositoryListView {
             }
         }
     }
-
+    private let jsonDecoder: JSONDecoder = {
+        let decoder = JSONDecoder()
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
+        return decoder
+    }()
 }
