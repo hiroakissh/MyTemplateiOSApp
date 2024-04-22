@@ -20,6 +20,8 @@
 		539411A82B8234A3008E126A /* UIComponent in Frameworks */ = {isa = PBXBuildFile; productRef = 539411A72B8234A3008E126A /* UIComponent */; };
 		53BDE26D2B7D78600078E363 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 53BDE26C2B7D78600078E363 /* ComposableArchitecture */; };
 		53BDE26F2B7D79040078E363 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BDE26E2B7D79040078E363 /* LaunchScreen.swift */; };
+		53D0DA602BD00ED400DF1F21 /* MockApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D0DA5F2BD00ED400DF1F21 /* MockApi.swift */; };
+		53D0DA992BD4EB7E00DF1F21 /* RepositoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D0DA982BD4EB7E00DF1F21 /* RepositoryListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,10 @@
 		539411A52B823444008E126A /* UIComponent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = UIComponent; sourceTree = "<group>"; };
 		539411AC2B82355B008E126A /* Data */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Data; sourceTree = "<group>"; };
 		53BDE26E2B7D79040078E363 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
+		53D0DA5F2BD00ED400DF1F21 /* MockApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockApi.swift; sourceTree = "<group>"; };
+		53D0DA982BD4EB7E00DF1F21 /* RepositoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListView.swift; sourceTree = "<group>"; };
+		53D0DA9A2BD4F42800DF1F21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		53D0DA9B2BD4F44E00DF1F21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,7 @@
 		5313166C2B7723CF0060B7C1 /* MyTemplateiOSApp */ = {
 			isa = PBXGroup;
 			children = (
+				53D0DA9B2BD4F44E00DF1F21 /* Info.plist */,
 				5313166D2B7723CF0060B7C1 /* MyTemplateiOSAppApp.swift */,
 				5313166F2B7723CF0060B7C1 /* ContentView.swift */,
 				531316712B7723CF0060B7C1 /* Item.swift */,
@@ -115,6 +122,7 @@
 		53481AFE2BAB35B8005D8E97 /* MyTemplateiOSAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				53D0DA9A2BD4F42800DF1F21 /* Info.plist */,
 				53481AFF2BAB35B8005D8E97 /* MyTemplateiOSAppTests.swift */,
 			);
 			path = MyTemplateiOSAppTests;
@@ -149,6 +157,8 @@
 			children = (
 				533E9CBF2B9C20D300D7041C /* Todo.swift */,
 				533E9CC12B9C23E000D7041C /* Todos.swift */,
+				53D0DA5F2BD00ED400DF1F21 /* MockApi.swift */,
+				53D0DA982BD4EB7E00DF1F21 /* RepositoryListView.swift */,
 			);
 			path = Feature;
 			sourceTree = "<group>";
@@ -287,6 +297,8 @@
 			files = (
 				53BDE26F2B7D79040078E363 /* LaunchScreen.swift in Sources */,
 				533E9CC22B9C23E000D7041C /* Todos.swift in Sources */,
+				53D0DA992BD4EB7E00DF1F21 /* RepositoryListView.swift in Sources */,
+				53D0DA602BD00ED400DF1F21 /* MockApi.swift in Sources */,
 				531316702B7723CF0060B7C1 /* ContentView.swift in Sources */,
 				531316722B7723CF0060B7C1 /* Item.swift in Sources */,
 				5313166E2B7723CF0060B7C1 /* MyTemplateiOSAppApp.swift in Sources */,
@@ -446,6 +458,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyTemplateiOSApp/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -487,6 +500,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyTemplateiOSApp/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -524,6 +538,7 @@
 				ENABLE_TESTING_SEARCH_PATHS = YES;
 				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyTemplateiOSAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
 				MARKETING_VERSION = 1.0;
@@ -549,6 +564,7 @@
 				ENABLE_TESTING_SEARCH_PATHS = YES;
 				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyTemplateiOSAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
 				MARKETING_VERSION = 1.0;
@@ -641,6 +657,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyTemplateiOSApp/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -677,6 +694,7 @@
 				ENABLE_TESTING_SEARCH_PATHS = YES;
 				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyTemplateiOSAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
 				MARKETING_VERSION = 1.0;
